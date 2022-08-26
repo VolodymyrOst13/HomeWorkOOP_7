@@ -7,6 +7,9 @@ public class Price {
     String shopName;
     double price;
 
+    String shop1 = "ATB";
+    String shop2 = "Silpo";
+
     public Price (String productName, String shopName, double price){
         this.productName = productName;
         this.shopName = shopName;
@@ -15,35 +18,8 @@ public class Price {
 
     @Override
     public String toString() {
-        return "Product name: " + getProductName() + "\n" + "Supermarket: " + getShopName() + "\n" + "Price: " + getPrice();
+        return "Product name: " + productName + "\n" + "Supermarket: " + shopName + "\n" + "Price: " + price + "\n";
     }
-
-    public String getProductName() {
-        return productName;
-    }
-
-    public void setProductName(String productName) {
-        this.productName = productName;
-    }
-
-    public String getShopName() {
-        return shopName;
-    }
-
-    public void setShopName(String shopName) {
-        this.shopName = shopName;
-    }
-
-    public double getPrice() {
-        return price;
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
-
-
-
 
 }
 

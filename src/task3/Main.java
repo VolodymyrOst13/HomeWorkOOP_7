@@ -1,33 +1,24 @@
 package task3;
 
 import java.io.IOException;
-import java.util.Scanner;
 
 public class Main {
 
 
     public static void main(String[] args) throws IOException {
-        Price[] prices = new Price[2];
+        Price[] prices = new Price[5];
 
-        Scanner hw = new Scanner(System.in);
-
-        for (int i = 0; i < prices.length; i++){
-
-            String productName;
-            String shopName;
-            double price;
-
-            System.out.print("Enter product: ");
-            productName = hw.next();
-            System.out.print("Enter shop: ");
-            shopName = hw.next();
-            System.out.print("Enter price: ");
-            price = hw.nextDouble();
-        }
+        prices[0] = new Price("Bread", "ATB", 14);
+        prices[1] = new Price("Milk", "Silpo", 20);
+        prices[2] = new Price("Wine", "ATB", 150);
+        prices[3] = new Price("Bear", "Silpo", 18);
+        prices[4] = new Price("Chips", "Bedryonka", 10);
 
         for (int i = 0; i < prices.length; i++){
-            System.out.println(prices[i].toString());
+            System.out.println(prices[i]);
         }
+
+
 
 
     }
